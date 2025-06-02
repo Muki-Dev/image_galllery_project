@@ -6,6 +6,11 @@ a{
     text-decoration: none;
 }
 
+.thumbnail-image    {
+    width: 100%;
+    display: block;
+}
+
 .thumbnail-title{
     background: rgb(96,125,139);
     display: block;
