@@ -1,7 +1,17 @@
+body{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
 .thumbnail-title{
     background: rgb(96,125,139);
     display: block;
     color: rgb(202,238,255);
     margin: 0;
     padding: 4px 10px;
+
+    font-size: 18px;
 }
