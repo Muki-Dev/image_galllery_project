@@ -1,6 +1,7 @@
 var DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
 var DETAIL_IMAGE_TITLE = '[data-image-role="title"]';
 var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
+var HIDDEN_DETAIL_CLASS = 'hidden-detail';
 
 function setDetais(imageUrl,titleText){
     'use strict';
@@ -40,6 +41,11 @@ function getThumbnailsArray(){
     var thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
     var thumbnailArray = [].slice.call(thumbnails);
     return thumbnailArray;
+}
+
+function hideDetails(){
+    'use strict';
+    document.body.addClassList(HIDDEN_DETAIL_CLASS);
 }
 
 function initializeEvents(){
