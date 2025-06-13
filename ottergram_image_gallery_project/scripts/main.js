@@ -48,10 +48,19 @@ function hideDetails(){
     document.body.addClassList(HIDDEN_DETAIL_CLASS);
 }
 
+function addKeyPressHandler(){
+    'use strict';
+    document.body.addEventListener('keyup', function(event){
+        event.preventDefault();
+        console.log(event.keyCode);
+    })
+}
+
 function initializeEvents(){
     'use strict';
     var thumbnails = getThumbnailsArray();
     thumbnails.forEach(addThunbClickHandler)
+    addKeyPressHandler();
 }
 
 initializeEvents();
