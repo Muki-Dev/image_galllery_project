@@ -55,7 +55,7 @@ a{
 .thumbnail-list{
 
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
     order: 2;
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,12 @@ a{
     max-width: 120px;
     border: 1px solid rgb(100%,100%,100%);
     border: 1px solid rg(100%,100%,100%);
-   
+
+    transition: transform 133ms;
+}
+
+.thumbnail-item:hover{
+    transform: scale(1.2)
 }
 
 .thumbnail-image    {
@@ -138,6 +143,8 @@ a{
         flex-direction: column;
         order: 0;
         margin-left: 20px;
+
+        padding: 0 35px;
     }
 
     .thumbnail-item{
